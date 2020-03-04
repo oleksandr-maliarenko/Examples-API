@@ -1,0 +1,6 @@
+.idea
+node_modules
+dist
+jest_html_reporters.html
+.env
+.DS_Store

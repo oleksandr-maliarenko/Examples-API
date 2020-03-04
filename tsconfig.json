@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "target": "esnext",
+    "module": "commonjs",
+    "declaration": true,
+    "outDir": "dist",
+    "sourceMap": true,
+    "types": ["jest", "node", "node-fetch", "jasmine"]
+  },
+  "include": ["src/**/*", "test/**/*", "src/**/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
