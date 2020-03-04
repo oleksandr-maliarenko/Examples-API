@@ -3,7 +3,7 @@ import Expect from '../../src/utils/assertions';
 import { builtHeaders } from '../../src/request/built-objects/built.headers';
 import * as loginSchema from '../../src/response/schema/posts/actions/post.json';
 import { builtPostRequest } from '../../src/request/built-objects/built.post';
-import PostsController from '../../src/controllers/authentication.controller';
+import PostsController from '../../src/controllers/posts.controller';
 
 describe('Posts', () => {
   test('User is able to add a new Post', async () => {
