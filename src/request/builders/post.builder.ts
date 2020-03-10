@@ -1,7 +1,7 @@
 import IPost from '../models/post.model';
 
 export default class PostBuilder {
-  public model: IPost;
+  private model: IPost;
   constructor() {
     this.model = {
       userId: undefined,
@@ -30,6 +30,7 @@ export default class PostBuilder {
     this.model.body = body;
     return this;
   }
+
   build(): IPost {
     return this.model;
   }

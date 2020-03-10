@@ -4,7 +4,7 @@ import './custom.matcher';
 
 export default class Expect {
   private res: Response;
-  public json: Promise<any>;
+  private json: Promise<any>;
   constructor(response: Response) {
     this.res = response;
     this.json = this.res.json();

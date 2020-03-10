@@ -1,7 +1,7 @@
 import IHeaders from '../models/headers.model';
 
 export default class HeaderBuilder {
-  public model: IHeaders;
+  private model: IHeaders;
   constructor() {
     this.model = {
       'Content-Type': 'application/json',
