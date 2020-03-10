@@ -9,15 +9,15 @@ export default class Expect {
     this.res = response;
     this.json = this.res.json();
   }
-  async statusCodeToEqual(code: number) {
+  async statusCodeToEqual(code: number): Promise<any> {
     await expect(this.res).toHaveStatusCode(code);
   }
 
-  async responseBodyTypeToBe(schema: Joi.Schema) {
+  async responseBodyTypeToBe(schema: Joi.Schema): Promise<any> {
     Joi.assert(await this.json, schema);
   }
 
-  async responseSchemaToEqual(schema: object) {
+  async responseSchemaToEqual(schema: object): Promise<any> {
     await expect(await this.json).toBeOfSchema(schema);
   }
 }
