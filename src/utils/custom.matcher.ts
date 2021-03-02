@@ -1,7 +1,7 @@
-import * as Ajv from 'ajv';
+import  Ajv from 'ajv'
 import { JSONPath } from 'jsonpath-plus';
 import * as draft6 from 'ajv/lib/refs/json-schema-draft-06.json';
-const ajv: Ajv.Ajv = new Ajv();
+const ajv: Ajv = new Ajv({strictTypes: false});
 ajv.addMetaSchema(draft6);
 
 expect.extend({
